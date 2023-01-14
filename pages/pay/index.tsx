@@ -19,7 +19,7 @@ const PayRefer: NextPage = () => {
         router.query.amount ? `?am=${router.query.amount}` : ""
       }`
     );
-  }, [router.query]);
+  }, [router, router.query]);
 
   return <p>Redirecting ...</p>;
 };
